@@ -3,10 +3,37 @@
 <head>
 	<meta charset="utf-8">
 	<title>Wow that's was great</title>
+	<style type="text/css">
+		.red{ /*for class attribute <tag class="red">*/
+			color: red;
+			font-weight: bold;
+		}
+		b, ul>li>ol>li{ /*for specified tags; ul>li>ol>li - css selector(exact route to your tag)*/
+			color: green;
+			font-style: italic;
+		}
+		#sec1{ /*for id attribute <tag id="sec1">, id must be unique along the page (1 id for 1 page)*/
+			color: darkblue;
+			background-color: lightyellow;
+		}
+		h1{
+			text-align: center;
+			background-color: lightgreen;
+		}
+		section p{/*any <p> tag on any level inside <section> tag*/
+			color:magenta;
+		}
+		p.big{/*for tag <p class="big">*/
+			font-size: 25px;
+			background-color: yellow;
+			writing-mode: vertical-lr;
+			text-orientation:mixed;
+		}
+	</style>
 </head>
 <body>
 	<header>This is my new HEADER tag</header>
-	<h1>This is main header (they say it's important for SEO purposes)</h1>
+	<h1>This is main header (they say it's important for<p class="big">SEO</p>purposes)</h1>
 	<section>
 		&lt;section&gt; (I didn't knew about this tag)
 		<article>
@@ -14,9 +41,8 @@
 		</article>
 		<div>&lt;div&gt; was the one I knew about</div>
 	</section>
-	<p><b>E = mc<sup>2</sup></b><sub>&copy; by A.Einstein</sub>
+	<p><b>E = mc<sup>2</sup></b><sub class="red">&copy; by A.Einstein</sub>
 	</p>
-	<p></p>
 	<h3>Next phrase never breakes apart because of &amp;nbsp reference <b>&quot;Do&nbsp;your&nbsp;best&nbsp;being&nbsp;who&nbsp;you&nbsp;are&nbsp;and&nbsp;where&nbsp;you&nbsp;belong.&quot;</b></h3>
 	<h4>List example:</h4>
 	<ul>
